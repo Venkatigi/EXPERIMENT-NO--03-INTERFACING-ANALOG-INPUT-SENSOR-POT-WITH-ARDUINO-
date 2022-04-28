@@ -67,7 +67,29 @@ CIRCUIT DIAGRAM
 
 
 **PROGRAM** 
- 
+~~~c++
+// C++ code
+//
+int potpin=A5;
+int ledpin=2;
+void setup()
+{
+  pinMode(potpin, INPUT);
+  pinMode(ledpin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  int pot=analogRead(A5);
+  if (pot>=450){
+    digitalWrite(2, HIGH);
+  }else{
+    digitalWrite(2, LOW);
+  }
+     
+  }
+~~~
 
 
 
@@ -82,7 +104,7 @@ CIRCUIT DIAGRAM
 **
 
 
-[My image](username.github.com/repository/img/image.jpg)
+![My image](1.JPG)
 
 
 
@@ -90,4 +112,5 @@ CIRCUIT DIAGRAM
 
 
 
-**RESULT: ** Arduino uno analog input functioning is learned and interfaced with digital input switch .
+#### RESULT: 
+ Thus the simulation is done in TinkerCad.
